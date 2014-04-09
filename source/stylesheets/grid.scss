@@ -121,35 +121,9 @@ $gutter-width: 20px;
         } @else {
 
           margin-left: percentage($i/$group);
-
-        }
-      }
-
-      > .#{$grid-column-namespace}-pull-#{$i}-of-#{$group} {
-        @extend %#{$grid-column-namespace};
-
-        @if percentage($i/$group) == percentage(1/1) {
-          @extend %pull-span-all;
-        } @else if percentage($i/$group) == percentage(1/2) {
-          @extend %pull-one-half;
-        } @else if percentage($i/$group) == percentage(1/3) {
-          @extend %pull-one-third;
-        } @else if percentage($i/$group) == percentage(2/3) {
-          @extend %pull-two-thirds;
-        } @else if percentage($i/$group) == percentage(1/4) {
-          @extend %pull-one-quarter;
-        } @else if percentage($i/$group) == percentage(2/4) {
-          @extend %pull-two-quarters;
-        } @else if percentage($i/$group) == percentage(3/4) {
-          @extend %pull-three-quarters;
-        } @else {
-
-          margin-left: -(percentage($i/$group));
-
         }
       }
     } // end @for
-
   } // end @each
 
   // All direct descendents of .row get treated the same way.
@@ -171,14 +145,6 @@ $gutter-width: 20px;
       width: auto;
     }
   }
-
-  .#{$grid-column-namespace}-centered {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 
   @media screen and (max-width: $breakpoint) {
     margin-left: 0;

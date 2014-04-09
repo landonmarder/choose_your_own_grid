@@ -16,11 +16,12 @@
     <h1 class='centered'>Choose Your Own Grid</h1>
 
     <div class="container">
-      <h2 class='centered'><a href="https://s3-us-west-2.amazonaws.com/landonmarder/grid.scss" class="centered">Download</a></h2>
+      <h2 class='centered'><a href="https://raw.githubusercontent.com/landonmarder/choose_your_own_grid/master/source/stylesheets/grid.scss" class="centered">Download</a></h2>
     </div>
 
     <div class='container'>
       <h2 class="centered">Level I Grid Stuff</h2>
+      <h4 class="centered">Idea: Each row has 100% columns, you can split up 100 anyway you want, with fraction helpers for denominator's 2, 3, 4, 5, and 100. You can add more helpers if you would like.</h4>
       <div class="row">
         <div class='column-1-of-2 green'><h3>.column-1-of-2</h3></div>
         <div class='column-1-of-2 red'><h3>.column-1-of-2</h3></div>
@@ -56,20 +57,29 @@
 
     <div class='container'>
       <h2 class="centered">Level II Grid Stuff</h2>
+      <h4 class="centered">Idea: Use push to push a column to the right. To push, you need to set a class for what fraction you want to push and what fraction you want to have featured.</h4>
       <div class="row">
-        <div class='column-1-of-2 green'><h3>.column-1-of-2</h3></div>
-        <div class='column-1-of-2 red'><h3>.column-1-of-2</h3></div>
+        <div class='column-push-1-of-2 column-1-of-2 green'><h3>.column-push-1-of-2 & .column-1-of-2</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='column-push-1-of-4 column-1-of-2 green'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class='column-push-0-of-4 column-1-of-2 green'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+        </div>
       </div>
     </div>
 
     <div class='container'>
       <h2 class="centered">Level III Grid Stuff</h2>
+      <h4 class="centered">Idea: You can nest rows inside of columns to get subcolumns.</h4>
       <div class="row">
         <div class='column-1-of-2 green'><h3>.column-1-of-2</h3></div>
-        <div class='column-1-of-2 red'><h3>.column-1-of-2</h3></div>
       </div>
     </div>
-
 
   </body>
 </html>
