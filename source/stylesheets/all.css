@@ -24,8 +24,20 @@ h1.centered {
   background: green;
 }
 
+.orange {
+  background: orange;
+}
+
+.blue {
+  bakground: blue;
+}
+
 .page-wrap {
   max-width: $breakpoint_max;
   margin: 0 auto;
   width: 90%;
+}
+
+.row {
+  padding: 25px 0;
 }
