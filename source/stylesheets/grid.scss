@@ -184,19 +184,4 @@ $gutter-width: 20px;
     margin-left: 0;
     width: auto;
   }
-
-
-  .#{$grid-column-namespace}-first {
-    float: left;
-  }
-
-  .#{$grid-column-namespace}-last {
-    float: right;
-  }
-
-
-  // Align column to the bottom. Useful for aligned promo images.
-  .#{$grid-column-namespace}-align-bottom {
-    vertical-align: bottom;
-  }
 }
