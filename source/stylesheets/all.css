@@ -1,5 +1,15 @@
-.centered {
-  text-align: center;
+div {
+  color: white;
+  text-align: center
+}
+
+h2 {
+  padding: 50px 0;
+}
+
+h1.centered {
+  padding: 50px;
+  color: black;
 }
 
 .red {
@@ -12,4 +22,10 @@
 
 .green {
   background: green;
+}
+
+.page-wrap {
+  max-width: $breakpoint_max;
+  margin: 0 auto;
+  width: 90%;
 }
