@@ -4,5 +4,6 @@
 
 $(function(){
   $('.row').on('click', function(){
-  })
+    var explanation = this.children[2];
+  });
 });
