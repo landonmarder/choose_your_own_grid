@@ -17,24 +17,20 @@ h1 {
   width: 100%;
 }
 
-.red {
-  background: red;
-}
-
-.blue {
-  background: blue;
-}
-
-.green {
+.color-one {
   background: green;
 }
 
-.orange {
+.color-two {
+  background: red;
+}
+
+.color-three {
   background: orange;
 }
 
-.blue {
-  bakground: blue;
+.color-four {
+  background: blue;
 }
 
 .container {
