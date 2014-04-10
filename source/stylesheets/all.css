@@ -51,6 +51,10 @@ h1 {
   }
 }
 
+.level-two {
+  padding:0;
+}
+
 /**
  * Monokai theme
  *
