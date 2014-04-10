@@ -55,6 +55,14 @@ h1 {
   padding:0;
 }
 
+.description-level-one {
+  padding: 10px 0;
+}
+
+.description-level-two {
+  padding: 20px 0;
+}
+
 /**
  * Monokai theme
  *
