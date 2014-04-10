@@ -1,195 +1,179 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<!-- This is modeled after HTML5 Boilerplate http://html5boilerplate.com/ -->
-  <head>
-    <title>SCSS Flexible Grid</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/grid.css">
-  </head>
+<h1 class='centered'>Flexible Grid</h1>
 
-  <body>
-    <h1 class='centered'>SCSS Flexible Grid</h1>
+  <div class="container">
+    <h2 class='centered'><a href="https://raw.githubusercontent.com/landonmarder/flexible_grid/master/source/stylesheets/grid.scss" class="centered">Download</a></h2>
+  </div>
 
-    <div class="container">
-      <h2 class='centered'><a href="https://raw.githubusercontent.com/landonmarder/flexible_grid/master/source/stylesheets/grid.scss" class="centered">Download</a></h2>
+  <div class='container'>
+    <div class='description-level-one'>
+      <h2 class="centered">Level I Grid Stuff</h2>
+      <h4 class="centered">Idea: Each row has 100% columns, you can split up 100 anyway you want, with fraction helpers for denominator's 2, 3, 4, 5, and 100. You can add more helpers if you want by adding more $col-groups in grid.css.</h4>
+    </div>
+    <div class="row">
+      <div class='column-1-of-2 color-one'><h3>.column-1-of-2</h3></div>
+      <div class='column-1-of-2 color-two'><h3>.column-1-of-2</h3></div>
+      <div class='explanation'>
+        <pre><code data-language="html">
+          <div class="row">
+            <div class='column-1-of-2 color-one'>
+              <h3>.column-1-of-2</h3>
+            </div>
+            <div class='column-1-of-2 color-two'>
+              <h3>.column-1-of-2</h3>
+            </div>
+          </div>
+        </code></pre>
+      </div>
     </div>
 
-    <div class='container'>
-      <div class='description-level-one'>
-        <h2 class="centered">Level I Grid Stuff</h2>
-        <h4 class="centered">Idea: Each row has 100% columns, you can split up 100 anyway you want, with fraction helpers for denominator's 2, 3, 4, 5, and 100. You can add more helpers if you want by adding more $col-groups in grid.css.</h4>
-      </div>
-      <div class="row">
-        <div class='column-1-of-2 color-one'><h3>.column-1-of-2</h3></div>
-        <div class='column-1-of-2 color-two'><h3>.column-1-of-2</h3></div>
-        <div class='explanation'>
-          <pre><code data-language="html">
-            <div class="row">
-              <div class='column-1-of-2 color-one'>
-                <h3>.column-1-of-2</h3>
-              </div>
-              <div class='column-1-of-2 color-two'>
-                <h3>.column-1-of-2</h3>
-              </div>
+    <div class="row">
+      <div class='column-1-of-3 color-one'><h3>.column-1-of-3</h3></div>
+      <div class='column-2-of-3 color-two'><h3>.column-2-of-3</h3></div>
+      <div class='explanation'>
+        <pre><code data-language="html">
+          <div class="row">
+            <div class='column-1-of-3 color-one'>
+              <h3>.column-1-of-3</h3>
             </div>
-          </code></pre>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class='column-1-of-3 color-one'><h3>.column-1-of-3</h3></div>
-        <div class='column-2-of-3 color-two'><h3>.column-2-of-3</h3></div>
-        <div class='explanation'>
-          <pre><code data-language="html">
-            <div class="row">
-              <div class='column-1-of-3 color-one'>
-                <h3>.column-1-of-3</h3>
-              </div>
-              <div class='column-2-of-3 color-two'>
-                <h3>.column-2-of-3</h3>
-              </div>
+            <div class='column-2-of-3 color-two'>
+              <h3>.column-2-of-3</h3>
             </div>
-          </code></pre>
-        </div>
+          </div>
+        </code></pre>
       </div>
+    </div>
 
-      <div class="row">
-        <div class='column-2-of-3 color-one'>
-          <h3>.column-2-of-3</h3>
+    <div class="row">
+      <div class='column-2-of-3 color-one'>
+        <h3>.column-2-of-3</h3>
+      </div>
+      <div class='column-1-of-3 color-two'>
+        <h3>.column-1-of-3</h3>
+      </div>
+      <div class='explanation'>
+        <pre><code data-language='html'>
+          <div class="row">
+            <div class='column-2-of-3 color-one'>
+              <h3>.column-2-of-3</h3>
+            </div>
+            <div class='column-1-of-3 color-two'>
+              <h3>.column-1-of-3</h3>
+            </div>
+          </div>
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class='column-2-of-3 color-one'>
+        <h3>.column-2-of-3</h3>
+      </div>
+      <div class='column-1-of-3 color-two'>
+        <h3>.column-1-of-3</h3>
+      </div>
+      <div class='explanation'>
+        <pre><code data-language='html'>
+          <div class="row">
+            <div class='column-2-of-3 color-one'>
+              <h3>.column-2-of-3</h3>
+            </div>
+            <div class='column-1-of-3 color-two'>
+              <h3>.column-1-of-3</h3>
+            </div>
+          </div>
+        </code></pre>
+      </div>
+    </div>
+
+     <div class="row">
+        <div class='column-20-of-100 color-one'>
+          <h3>.column-8-of-100</h3>
         </div>
-        <div class='column-1-of-3 color-two'>
-          <h3>.column-1-of-3</h3>
+        <div class='column-20-of-100 color-two'>
+          <h3>.column-22-of-100</h3>
+        </div>
+        <div class='column-27-of-100 color-three'>
+          <h3>.column-27-of-100</h3>
+        </div>
+        <div class='column-33-of-100 color-four'>
+          <h3>.column-43-of-100</h3>
         </div>
         <div class='explanation'>
           <pre><code data-language='html'>
             <div class="row">
-              <div class='column-2-of-3 color-one'>
-                <h3>.column-2-of-3</h3>
-              </div>
-              <div class='column-1-of-3 color-two'>
-                <h3>.column-1-of-3</h3>
-              </div>
-            </div>
-          </code></pre>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class='column-2-of-3 color-one'>
-          <h3>.column-2-of-3</h3>
-        </div>
-        <div class='column-1-of-3 color-two'>
-          <h3>.column-1-of-3</h3>
-        </div>
-        <div class='explanation'>
-          <pre><code data-language='html'>
-            <div class="row">
-              <div class='column-2-of-3 color-one'>
-                <h3>.column-2-of-3</h3>
-              </div>
-              <div class='column-1-of-3 color-two'>
-                <h3>.column-1-of-3</h3>
-              </div>
-            </div>
-          </code></pre>
-        </div>
-      </div>
-
-       <div class="row">
-          <div class='column-20-of-100 color-one'>
-            <h3>.column-8-of-100</h3>
-          </div>
-          <div class='column-20-of-100 color-two'>
-            <h3>.column-22-of-100</h3>
-          </div>
-          <div class='column-27-of-100 color-three'>
-            <h3>.column-27-of-100</h3>
-          </div>
-          <div class='column-33-of-100 color-four'>
-            <h3>.column-43-of-100</h3>
-          </div>
-          <div class='explanation'>
-            <pre><code data-language='html'>
-              <div class="row">
-                  <div class='column-20-of-100 color-one'>
-                    <h3>.column-8-of-100</h3>
-                  </div>
-                  <div class='column-20-of-100 color-two'>
-                    <h3>.column-22-of-100</h3>
-                  </div>
-                  <div class='column-27-of-100 color-three'>
-                    <h3>.column-27-of-100</h3>
-                  </div>
-                  <div class='column-33-of-100 color-four'>
-                    <h3>.column-43-of-100</h3>
-                  </div>
-              </div>
-            </code></pre>
-          </div>
-      </div>
-
-       <div class="row">
-          <div class='column-63-of-100 color-two'>
-            <h3>.column-63-of-100</h3>
-          </div>
-          <div class='column-37-of-100 color-one'>
-            <h3>.column-37-of-100</h3>
-          </div>
-          <div class='explanation'>
-            <pre><code data-language='html'>
-              <div class="row">
-                <div class='column-63-of-100 color-two'>
-                  <h3>.column-63-of-100</h3>
+                <div class='column-20-of-100 color-one'>
+                  <h3>.column-8-of-100</h3>
                 </div>
-                <div class='column-37-of-100 color-one'>
-                  <h3>.column-37-of-100</h3>
+                <div class='column-20-of-100 color-two'>
+                  <h3>.column-22-of-100</h3>
                 </div>
-              </div>
-            </code></pre>
-          </div>
-      </div>
+                <div class='column-27-of-100 color-three'>
+                  <h3>.column-27-of-100</h3>
+                </div>
+                <div class='column-33-of-100 color-four'>
+                  <h3>.column-43-of-100</h3>
+                </div>
+            </div>
+          </code></pre>
+        </div>
     </div>
 
-    <div class='container'>
-      <div class='description-level-two'>
-        <h2 class="centered">Level II Grid Stuff</h2>
-        <h4 class="centered">Idea: Use push to push a column to the right. To push, you need to set a class for what fraction you want to push and what fraction you want to have featured.</h4>
-      </div>
-      <div class="row level-two">
-        <div class='column-push-1-of-2 column-1-of-2 color-one'><h3>.column-push-1-of-2 & .column-1-of-2</h3>
+     <div class="row">
+        <div class='column-63-of-100 color-two'>
+          <h3>.column-63-of-100</h3>
         </div>
-      </div>
-
-      <div class="row level-two">
-        <div class='column-push-1-of-4 column-1-of-2 color-two'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
-        </div>
-      </div>
-      <div class="row level-two">
-        <div class='column-1-of-2 color-three'><h3>.column-1-of-2</h3>
+        <div class='column-37-of-100 color-one'>
+          <h3>.column-37-of-100</h3>
         </div>
         <div class='explanation'>
           <pre><code data-language='html'>
             <div class="row">
-              <div class='column-push-1-of-2 column-1-of-2 color-one'><h3>.column-push-1-of-2 & .column-1-of-2</h3>
+              <div class='column-63-of-100 color-two'>
+                <h3>.column-63-of-100</h3>
               </div>
-            </div>
-
-            <div class="row">
-              <div class='column-push-1-of-4 column-1-of-2 color-two'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class='column-push-0-of-4 column-1-of-2 color-three'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+              <div class='column-37-of-100 color-one'>
+                <h3>.column-37-of-100</h3>
               </div>
             </div>
           </code></pre>
         </div>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='description-level-two'>
+      <h2 class="centered">Level II Grid Stuff</h2>
+      <h4 class="centered">Idea: Use push to push a column to the right. To push, you need to set a class for what fraction you want to push and what fraction you want to have featured.</h4>
+    </div>
+    <div class="row level-two">
+      <div class='column-push-1-of-2 column-1-of-2 color-one'><h3>.column-push-1-of-2 & .column-1-of-2</h3>
       </div>
     </div>
-  </body>
-</html>
+
+    <div class="row level-two">
+      <div class='column-push-1-of-4 column-1-of-2 color-two'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+      </div>
+    </div>
+    <div class="row level-two">
+      <div class='column-1-of-2 color-three'><h3>.column-1-of-2</h3>
+      </div>
+      <div class='explanation'>
+        <pre><code data-language='html'>
+          <div class="row">
+            <div class='column-push-1-of-2 column-1-of-2 color-one'><h3>.column-push-1-of-2 & .column-1-of-2</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class='column-push-1-of-4 column-1-of-2 color-two'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class='column-push-0-of-4 column-1-of-2 color-three'><h3>.column-push-1-of-4 & .column-1-of-2</h3>
+            </div>
+          </div>
+        </code></pre>
+      </div>
+    </div>
+  </div>
+}
